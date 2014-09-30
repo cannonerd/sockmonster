@@ -1,0 +1,26 @@
+{
+    "properties": {
+        "name": "main",
+        "environment": {
+            "type": "noflo-browser",
+            "content": "<div class=\"eye-wrapper-container\">\n\t<div class=\"eye-wrapper\">\n\t\t<div class='eye'>\n\t\t\t<div>\n\t\t\t\t<div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class='skin'></div>\n\t</div>\n\t<div class=\"eye-wrapper\">\n\t\t<div class='eye'>\n\t\t\t<div>\n\t\t\t\t<div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class='skin'></div>\n\t</div>\n</div>\n\n<style>\n\nbody {\n  background-color: black;\n  overflow: hidden;\n}\n.eye-wrapper{\n    float:left;\n}\n.skin {\n  width: 100px;\n  height: 200px;\n  background-color: black;\n  position: relative;\n  top: -400px;\n  margin: auto;\n  z-index: 5;  \n  animation: blink 1s linear infinite alternate;\n}\n\n.eye {\n  width: 50px;\n  height: 50px;\n  border-radius: 70%;\n  margin: auto;\n  transform: rotate(45deg);\n  background-color: white;\n  position: relative;\n  top: 20%;\n  z-index: 4;\n}\n.eye > div {\n  width: 25px;\n  height: 25px;\n  border-radius: 50%;\n  position: relative;\n  top: 5px;\n  left: 20px;\n  background-color: rgb(0, 190, 240);\n  animation: move 3s infinite;\n}\n.eye > div > div {\n  background-color: black;\n  border-radius: 50%;\n  width: 10px;\n  height: 10px;\n  position: relative;\n  top: 7px;\n  left: 7px;\n  animation: move2 3s infinite;\n}\n\n\n\n\n\n@keyframes blink {\n  50% {\n    border-radius: 0% 0% 50% 50%;\n  }\n  100% {\n    border-radius: 0% 0% 50% 50%;\n    top: -200px;\n  }\n}\n\n@keyframes move {\n  50% {transform: translate(-15px, 15px);}\n}\n@keyframes move2 {\n  50% {transform: translate(-3px, 3px);}\n}\n\n\n</style>"
+        },
+        "description": "creating a monster"
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "dom/AddClass_vfxav": {
+            "component": "dom/AddClass",
+            "metadata": {
+                "label": "dom/AddClass",
+                "x": 468,
+                "y": 216,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": []
+}
